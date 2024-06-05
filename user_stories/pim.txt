@@ -1,0 +1,34 @@
+Description: As a DevOps engineer, I want to set up Privileged Identity Management (PIM) in Entra ID (Azure AD) to manage and control elevated access for our team members, ensuring enhanced security and compliance.
+
+Acceptance Criteria:
+
+PIM Configuration:
+
+Enable Privileged Identity Management in Entra ID.
+Configure PIM to manage administrative roles for the organization.
+Role Assignment:
+
+Identify and assign eligible roles for PIM access (e.g., Global Administrator, Privileged Role Administrator, Security Administrator).
+Assign team members to their respective PIM-eligible roles based on their responsibilities.
+Access Policies:
+
+Set up access policies for PIM roles:
+Define approval workflows for role activation.
+Set activation duration limits for temporary access.
+Implement multi-factor authentication (MFA) requirements for activation.
+Configure notification settings for role activations and changes.
+Just-in-Time Access:
+
+Ensure that PIM is configured for just-in-time (JIT) access, allowing team members to request and activate roles only when needed.
+Define and document procedures for requesting and activating PIM roles.
+Audit and Monitoring:
+
+Enable logging and monitoring for all PIM activities.
+Set up alerts for unusual or unauthorized access attempts.
+Schedule regular reviews of PIM access and activity logs.
+Testing and Validation:
+
+Verify that team members can request and activate PIM roles as per the defined policies.
+Test the approval workflow and MFA requirements.
+Confirm that access is granted only for the specified duration and automatically revoked after the time limit.
+Document the setup process and validation results.
