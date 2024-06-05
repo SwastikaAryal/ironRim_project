@@ -1,0 +1,25 @@
+Description
+The purpose of this user story is to establish a new resource group in our 
+cloud environment, configure it with the necessary inherited IAM policies
+to ensure proper access controls, and set up a private DNS zone for internal
+resource naming and management. This setup will streamline resource organization,
+enhance security, and improve internal network resolution.
+
+Acceptance citeria
+
+Resource Group Creation:
+- Create the resource group.
+- Tag the resource group appropriately.
+
+IAM Configuration:
+- Apply inherited IAM policies.
+- Test IAM policies with different user roles.
+
+Private DNS Zone Configuration:
+- Create the private DNS zone.
+- Configure DNS records for key internal services.
+- Restrict DNS zone access to specified VNets.
+
+Validation and Testing:
+- Test resource group access and IAM policies.
+- Test DNS resolution within the private DNS zone.
