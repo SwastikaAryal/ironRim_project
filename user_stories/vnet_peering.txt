@@ -1,0 +1,36 @@
+Description
+The goal is to establish VNet peering between the various networks involved in the platform, specifically connectivity, Identity, AVD, Management, and DevOps networks. This peering will enable secure communication between the Azure DevOps (AzDO) application and Azure Key Vault, allowing the application to retrieve secrets securely. The peering should follow best practices for security and performance.
+
+Acceptance Criteria
+VNet Peering Configuration:
+
+VNet peering must be established between the following VNets: Connectivity, Identity, AVD, Management, and DevOps.
+Each peering connection should be bidirectional, allowing traffic flow between the VNets.
+Network Security:
+
+Ensure Network Security Groups (NSGs) and Azure Firewall rules are updated to allow traffic between the VNets involved in the peering.
+Define specific security rules to permit the AzDO App to access the Key Vault while restricting unnecessary traffic.
+Routing:
+
+Update routing tables to ensure that traffic between the peered VNets is routed correctly.
+Verify that there are no overlapping IP address spaces between the peered VNets to avoid routing conflicts.
+Key Vault Access:
+
+Ensure that the AzDO App has the necessary permissions to access the Key Vault.
+Verify that the AzDO App can securely pull secrets from the Key Vault after the peering is established.
+Testing:
+
+Conduct connectivity tests to ensure that traffic can flow between the peered VNets.
+Perform security testing to confirm that NSG rules and Azure Firewall policies are effectively protecting network resources.
+Validate that the AzDO App can successfully retrieve secrets from the Key Vault.
+Monitoring and Logging:
+
+Enable monitoring and logging for VNet peering connections to track performance and troubleshoot issues.
+Set up alerts for any connectivity issues or security breaches related to the VNet peering.
+Documentation:
+
+Provide comprehensive documentation detailing the VNet peering configuration, security policies, routing rules, and testing results.
+Include a network diagram illustrating the peered VNets and the flow of traffic for the AzDO App accessing the Key Vault.
+Compliance:
+
+Ensure the VNet peering setup adheres to any compliance requirements and industry standards relevant to the organization.
