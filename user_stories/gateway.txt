@@ -1,0 +1,49 @@
+As a Cloud Infrastructure Engineer
+I want to set up an Application Gateway with a public IP for Azure DevOps
+So that the AzDO service can be accessed via the public DNS fiservbfs.com
+
+Description
+The objective is to configure an Azure Application Gateway with a public IP address to provide secure and efficient access to the Azure DevOps (AzDO) service. This setup will also include configuring the public DNS fiservbfs.com to point to the Application Gateway. The gateway should handle incoming traffic securely, distribute it to backend services, and provide features such as SSL termination, URL-based routing, and health monitoring.
+
+Acceptance Criteria
+Application Gateway Creation:
+
+An Azure Application Gateway must be created.
+The gateway should have a public IP address assigned to it.
+DNS Configuration:
+
+Configure the public DNS fiservbfs.com to point to the public IP address of the Application Gateway.
+Ensure DNS propagation is verified and completed.
+Frontend Configuration:
+
+Configure the Application Gateway's frontend IP configuration with the public IP address.
+Backend Pool Configuration:
+
+Add the Azure DevOps service endpoints to the backend pool of the Application Gateway.
+Ensure the backend pool includes all necessary instances for load balancing and high availability.
+Routing Rules:
+
+Set up HTTP/HTTPS listeners on the Application Gateway.
+Configure routing rules to direct traffic from fiservbfs.com to the appropriate backend services.
+Implement URL-based routing if needed to handle different paths.
+Security:
+
+Implement SSL termination at the Application Gateway.
+Ensure an SSL certificate is obtained and installed for fiservbfs.com.
+Configure Web Application Firewall (WAF) policies to protect against common web vulnerabilities.
+Health Probes:
+
+Configure health probes to monitor the status of the backend services.
+Ensure the health probes are correctly checking the availability and health of the Azure DevOps endpoints.
+Monitoring and Logging:
+
+Enable diagnostics logging for the Application Gateway.
+Set up monitoring and alerts for traffic patterns, errors, and potential security issues.
+Testing:
+
+Verify that fiservbfs.com resolves to the public IP of the Application Gateway.
+Test access to the Azure DevOps service through the Application Gateway to ensure traffic is correctly routed.
+Perform end-to-end testing to confirm that SSL termination, routing rules, and security features are working as expected.
+Documentation:
+Provide comprehensive documentation detailing the Application Gateway configuration, DNS setup, SSL certificate installation, routing rules, and security policies.
+Include a network diagram illustrating the flow of traffic from the public DNS fiservbfs.com to the Application Gateway and then to the backend Azure DevOps services.
