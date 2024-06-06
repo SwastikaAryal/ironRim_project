@@ -1,0 +1,38 @@
+Description
+The goal is to deploy a Virtual Network (VNet) and its associated subnets across all platform subscriptions. This will provide a structured and secure network environment for all platform services, ensuring proper segmentation, isolation, and management of network resources. The deployment should follow best practices for network security, scalability, and maintainability.
+
+Acceptance Criteria
+VNet Creation:
+
+A Virtual Network (VNet) must be created for each platform subscription.
+The VNet should be named according to the standard naming convention (e.g., VNet-<PlatformName>-<Region>).
+Subnet Creation:
+
+Subnets must be created within each VNet as per the platform requirements.
+Each subnet should have a defined CIDR block that does not overlap with other subnets within the VNet.
+Subnets should be named according to the standard naming convention (e.g., Subnet-<Purpose>-<Region>).
+Network Security:
+
+Network Security Groups (NSGs) must be associated with each subnet to control inbound and outbound traffic.
+Default security rules should be defined based on the platform's security policy.
+Routing:
+
+Appropriate routing tables must be created and associated with each subnet.
+Routes should be defined to allow necessary traffic and deny all other traffic as per security guidelines.
+Integration and Connectivity:
+
+VNets should be configured to enable peering with other VNets as required.
+VNets should support connectivity to on-premises networks via VPN or ExpressRoute if needed.
+Scalability:
+
+The network architecture should be designed to accommodate future growth and additional subnets.
+Address space allocation should consider potential expansion.
+Documentation:
+
+Comprehensive documentation must be provided, detailing the VNet and subnet configuration, security policies, and routing rules.
+Documentation should include a network diagram illustrating the overall network architecture.
+Testing:
+
+Verify that all VNets and subnets are correctly deployed and configured.
+Conduct connectivity tests to ensure that network traffic flows as expected.
+Perform security testing to confirm that NSG rules are effectively protecting network resources.

@@ -1,0 +1,25 @@
+User Story: Set Up IAM Subscription Role Assignments for Entra ID Groups
+Title: Set Up IAM Subscription Role Assignments for Entra ID Groups
+
+Description: As a DevOps engineer, I want to set up IAM subscription role assignments for Entra ID groups to ensure that team members have the necessary access permissions to manage and operate resources effectively within our cloud environment.
+
+
+Identify Required Roles:
+Determine the necessary subscription roles based on team responsibilities (e.g., Reader, Contributor, Owner).
+Define Entra ID groups corresponding to these roles.
+
+Group Creation:
+Create Entra ID groups for each role (if they do not already exist).
+Name groups according to their role (e.g., Subscription-Readers, Subscription-Contributors, Subscription-Owners).
+
+Role Assignment:
+Assign the identified subscription roles to the respective Entra ID groups.
+Ensure that each role assignment is correctly configured in the subscription.
+
+Access Verification:
+Ensure that users within each Entra ID group have the appropriate access permissions for their role.
+Test the access permissions to confirm they work as intended.
+
+Documentation and Communication:
+Document the role assignments and group memberships.
+Notify team members of their group memberships and the access permissions associated with their roles.
