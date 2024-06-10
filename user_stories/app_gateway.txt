@@ -1,0 +1,36 @@
+User Story: Set Up Azure Application Gateway with Public IP for fiservbfs.com
+Description:
+As a DevOps engineer, I want to set up an Azure Application Gateway with a public IP and configure the DNS for fiservbfs.com to route traffic securely to Azure DevOps services, ensuring reliable and secure access.
+
+Acceptance Criteria:
+
+Public IP Creation:
+
+A new public IP address is created in the Azure portal.
+The public IP address is configured as static.
+Verification that the public IP address is accessible from the internet.
+Azure Application Gateway Setup:
+
+An Azure Application Gateway is created in the appropriate resource group.
+The public IP address is associated with the Application Gateway.
+The Application Gateway is configured with a basic SKU.
+Backend pools are set up to include Azure DevOps services.
+Health probes are configured to monitor the Azure DevOps services.
+Testing is performed to ensure the Application Gateway routes traffic correctly to the backend Azure DevOps services.
+DNS Configuration:
+
+The DNS settings for fiservbfs.com are updated with an A record pointing to the public IP address of the Azure Application Gateway.
+DNS propagation is confirmed through DNS lookup tools.
+Verification that the domain fiservbfs.com resolves to the public IP address of the Azure Application Gateway.
+SSL Implementation:
+
+An SSL certificate is obtained and uploaded to the Azure Application Gateway.
+HTTPS listeners are configured on the Application Gateway.
+HTTP to HTTPS redirection is set up to ensure all traffic is encrypted.
+Verification that the SSL certificate is functioning correctly and all communications are secure.
+Monitoring and Maintenance:
+
+Monitoring and alerting are configured in Azure Monitor for the Application Gateway.
+Logs and metrics are collected to track performance and health.
+Regular maintenance schedules are established and documented.
+Prompt resolution of any issues identified through monitoring to ensure ongoing availability and performance.
