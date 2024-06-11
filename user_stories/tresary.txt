@@ -1,0 +1,26 @@
+User Story: Add A-Record to fiservbfs.com Public DNS and Provide Public IP from Azure
+Description:
+As a DevOps engineer, I want the Treasury team to add an A-Record to the fiservbfs.com public DNS and provide the public IP address from Azure, so that the domain resolves correctly and traffic is routed to the Azure Application Gateway.
+
+Acceptance Criteria:
+
+Provision Public IP Address:
+
+A new public IP address is created in the Azure portal.
+The public IP address is configured to be static.
+The public IP address is documented and shared with the Treasury team.
+Request to Treasury Team:
+
+A formal request is submitted to the Treasury team to update the fiservbfs.com DNS settings.
+The request includes details of the public IP address provided by Azure.
+The request specifies that an A-Record needs to be added to point fiservbfs.com to the provided public IP address.
+DNS Configuration by Treasury Team:
+
+The Treasury team confirms receipt of the request and acknowledges the details.
+The Treasury team updates the DNS settings for fiservbfs.com to include an A-Record pointing to the provided public IP address.
+The Treasury team notifies the DevOps engineer once the DNS update is completed.
+Verification:
+
+The DNS propagation is confirmed through DNS lookup tools.
+Verification that the domain fiservbfs.com resolves to the public IP address.
+Ensure that the Azure Application Gateway is accessible via the fiservbfs.com domain
